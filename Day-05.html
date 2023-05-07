@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day05-html</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #myntra {
+        height: 600px;
+        width: 100%;
+        border: 1px solid black;
+      }
+
+      #navbar {
+        height: 18%;
+        width: 100%;
+        border: 2px solid green;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #logo {
+        height: 80%;
+        width: 8%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #nav-items {
+        height: 80%;
+        width: 35%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #search {
+        height: 80%;
+        width: 25%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #other {
+        height: 80%;
+        width: 15%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #body {
+        height: 75%;
+        width: 100%;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myntra">
+      <div id="navbar">
+        <div id="logo">Myntra</div>
+        <div id="nav-items">
+          <div>Men</div>
+          <div>Women</div>
+          <div>Kids</div>
+          <div>Home&Living</div>
+          <div>Beauty</div>
+          <div>Studio</div>
+        </div>
+        <div id="search">
+          <div style="height: auto; width: 100%; border: 1px solid grey">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            <input
+              placeholder="Search for products,brands & More..."
+              style="height: 28px; width: 250px; border: none; outline: none"
+            />
+          </div>
+        </div>
+        <div id="other">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <i class="fa-solid fa-user fa-1x"></i>
+            <p style="font-size: 13px">Profile</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <i class="fa-solid fa-heart fa-1x"></i>
+            <p style="font-size: 13px">Whislist</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <i class="fa-solid fa-bag-shopping fa-1x"></i>
+            <p style="font-size: 13px">bag</p>
+          </div>
+        </div>
+      </div>
+      <div id="body"></div>
+    </div>
+  </body>
+</html>
