@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day06-CSS</title>
+
+    <style>
+      #resume-body {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid rgb(191, 191, 191);
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .set-margin-left {
+        margin-left: 40px;
+      }
+
+      .set-header-color {
+        color: red;
+      }
+
+      #left-section {
+        height: 100%;
+        width: 25%;
+        border: 1px solid rgb(202, 202, 202);
+        background-color: rgb(226, 241, 255);
+      }
+
+      .left-structure {
+        height: 40%;
+        width: 100%;
+        border: 1px solid rgb(188, 188, 188);
+      }
+
+      #profile {
+        text-align: center;
+      }
+
+      .set-margin-zero {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      #profile-img {
+        margin: auto;
+        height: 60%;
+        width: 50%;
+      }
+
+      #tech-stack {
+        margin: auto;
+      }
+
+      #skills {
+        height: 28%;
+      }
+
+      #hobbies {
+        height: 25%;
+      }
+
+      #right-section {
+        height: 800px;
+        width: 65%;
+        border: 2px solid rgb(188, 188, 188);
+        background-color: rgb(253, 242, 190);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="resume-body">
+      <div id="left-section">
+        <div id="profile" class="left-structure">
+          <div id="profile-img">
+            <img style="height: 100%; width: 100%" src="./boy1.png" />
+          </div>
+          <h2
+            class="set-margin-zero"
+            style="letter-spacing: 2px; color: rgb(255, 55, 0)"
+          >
+            SANTOSH CHAPPIDI
+          </h2>
+          <p class="set-margin-zero">8356015803</p>
+          <p class="set-margin-zero">santoshchappidi03@gmail.com</p>
+        </div>
+        <div id="tech-stack" class="left-structure">
+          <h2 class="set-margin-zero, center-text">Frontend Technologies :</h2>
+          <ul class="set-margin-left">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+          </ul>
+          <h2 class="set-margin-zero, center-text">Backend Technologies :</h2>
+          <ul class="set-margin-left">
+            <li>Node Js</li>
+            <li>Mongodb</li>
+            <li>Express JS</li>
+          </ul>
+        </div>
+        <div id="skills" class="left-structure">
+          <h2 class="set-margin-left">Skills :</h2>
+          <ul class="set-margin-left">
+            <li>Team Member</li>
+            <li>Quick Learner</li>
+            <li>Good Time Management</li>
+            <li>Flexible</li>
+            <li>Leadership</li>
+            <li>Problem Solver</li>
+          </ul>
+        </div>
+        <div id="hobbies" class="left-structure">
+          <h2 class="set-margin-left">Hobbies :</h2>
+          <ul class="set-margin-left">
+            <li>Reading Books</li>
+            <li>Exploring new things</li>
+            <li>Teaching</li>
+          </ul>
+        </div>
+      </div>
+      <div id="right-section">
+        <p>Experience</p>
+        <p>Projects</p>
+        <p>Eductaion</p>
+        <p>Certifications</p>
+      </div>
+    </div>
+  </body>
+</html>
