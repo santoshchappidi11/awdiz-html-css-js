@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day07-CSS</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .display-flex {
+        height: 200px;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgb(125, 125, 125);
+      }
+
+      .margin-structure {
+        font-size: 18px;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        background-color: rgb(252, 221, 218);
+      }
+
+      .paddinng-structure {
+        font-size: 18px;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid green;
+        background-color: rgb(213, 255, 213);
+      }
+
+      .border-structure {
+        font-size: 18px;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid blue;
+        background-color: rgb(209, 209, 255);
+      }
+
+      .set-margin-to-title {
+        margin-top: 60px;
+        margin-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="set-margin-to-title">Margin</h2>
+      <div class="display-flex">
+        <div class="margin-structure" style="margin: 10px 30px">Margin</div>
+        <div class="margin-structure" style="margin: 10px 20px 10px 20px">
+          Margin
+        </div>
+        <div class="margin-structure" style="margin: 60px">Margin</div>
+        <div class="margin-structure" style="margin-top: 50px">Margin</div>
+        <div class="margin-structure" style="margin-right: 30px">Margin</div>
+        <div class="margin-structure" style="margin-bottom: 50px">Margin</div>
+        <div class="margin-structure" style="margin-left: 30px">Margin</div>
+      </div>
+
+      <h2 class="set-margin-to-title">Padding</h2>
+      <div class="display-flex">
+        <div class="paddinng-structure" style="padding: 10px 50px">padding</div>
+        <div class="paddinng-structure" style="padding: 10px 20px 10px 20px">
+          padding
+        </div>
+        <div class="paddinng-structure" style="padding: 20px">padding</div>
+        <div class="paddinng-structure" style="padding-top: 70px">padding</div>
+        <div class="paddinng-structure" style="padding-right: 70px">
+          padding
+        </div>
+        <div class="paddinng-structure" style="padding-bottom: 70px">
+          padding
+        </div>
+        <div class="paddinng-structure" style="padding-left: 75px">padding</div>
+      </div>
+
+      <h2 class="set-margin-to-title">Border-Radius</h2>
+      <div class="display-flex">
+        <div class="border-structure" style="border-radius: 50% 50%">
+          Border
+        </div>
+        <div class="border-structure" style="border-radius: 30% 5% 30% 5%">
+          Border
+        </div>
+        <div class="border-structure" style="border-radius: 20%">Border</div>
+        <div class="border-structure" style="border-top-left-radius: 80%">
+          Border
+        </div>
+        <div class="border-structure" style="border-top-right-radius: 80%">
+          Border
+        </div>
+        <div class="border-structure" style="border-bottom-left-radius: 80%">
+          Border
+        </div>
+        <div class="border-structure" style="border-bottom-right-radius: 80%">
+          Border
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
