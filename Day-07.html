@@ -23,23 +23,30 @@
       }
 
       .display-flex {
-        height: 200px;
+        height: auto;
         width: 95%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid rgb(125, 125, 125);
+        border: 1px solid rgb(163, 163, 163);
+        padding: 15px;
+      }
+
+      .margin-box {
+        height: 150px;
+        width: 150px;
+        border: 2px solid rgb(239, 174, 167);
       }
 
       .margin-structure {
         font-size: 18px;
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 2px solid red;
-        background-color: rgb(252, 221, 218);
+        background-color: rgb(255, 168, 160);
       }
 
       .paddinng-structure {
@@ -75,55 +82,51 @@
     <div class="container">
       <h2 class="set-margin-to-title">Margin</h2>
       <div class="display-flex">
-        <div class="margin-structure" style="margin: 10px 30px">Margin</div>
-        <div class="margin-structure" style="margin: 10px 20px 10px 20px">
-          Margin
+        <div class="margin-box">
+          <div class="margin-structure" style="margin: 20px 30px">Margin</div>
         </div>
-        <div class="margin-structure" style="margin: 60px">Margin</div>
-        <div class="margin-structure" style="margin-top: 50px">Margin</div>
-        <div class="margin-structure" style="margin-right: 30px">Margin</div>
-        <div class="margin-structure" style="margin-bottom: 50px">Margin</div>
-        <div class="margin-structure" style="margin-left: 30px">Margin</div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin: 10px 20px 10px 20px">
+            Margin
+          </div>
+        </div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin: 60px">Margin</div>
+        </div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin-top: 50px">Margin</div>
+        </div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin-right: 30px">Margin</div>
+        </div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin-bottom: 50px">Margin</div>
+        </div>
+        <div class="margin-box">
+          <div class="margin-structure" style="margin-left: 30px">Margin</div>
+        </div>
       </div>
 
       <h2 class="set-margin-to-title">Padding</h2>
       <div class="display-flex">
         <div class="paddinng-structure" style="padding: 10px 50px">padding</div>
-        <div class="paddinng-structure" style="padding: 10px 20px 10px 20px">
-          padding
-        </div>
+        <div class="paddinng-structure" style="padding: 10px 20px 10px 20px">padding</div>
         <div class="paddinng-structure" style="padding: 20px">padding</div>
         <div class="paddinng-structure" style="padding-top: 70px">padding</div>
-        <div class="paddinng-structure" style="padding-right: 70px">
-          padding
-        </div>
-        <div class="paddinng-structure" style="padding-bottom: 70px">
-          padding
-        </div>
+        <div class="paddinng-structure" style="padding-right: 70px">padding</div>
+        <div class="paddinng-structure" style="padding-bottom: 70px">padding</div>
         <div class="paddinng-structure" style="padding-left: 75px">padding</div>
       </div>
 
       <h2 class="set-margin-to-title">Border-Radius</h2>
       <div class="display-flex">
-        <div class="border-structure" style="border-radius: 50% 50%">
-          Border
-        </div>
-        <div class="border-structure" style="border-radius: 30% 5% 30% 5%">
-          Border
-        </div>
+        <div class="border-structure" style="border-radius: 50% 50%">Border</div>
+        <div class="border-structure" style="border-radius: 30% 5% 30% 5%">Border</div>
         <div class="border-structure" style="border-radius: 20%">Border</div>
-        <div class="border-structure" style="border-top-left-radius: 80%">
-          Border
-        </div>
-        <div class="border-structure" style="border-top-right-radius: 80%">
-          Border
-        </div>
-        <div class="border-structure" style="border-bottom-left-radius: 80%">
-          Border
-        </div>
-        <div class="border-structure" style="border-bottom-right-radius: 80%">
-          Border
-        </div>
+        <div class="border-structure" style="border-top-left-radius: 80%">Border</div>
+        <div class="border-structure" style="border-top-right-radius: 80%">Border</div>
+        <div class="border-structure" style="border-bottom-left-radius: 80%">Border</div>
+        <div class="border-structure" style="border-bottom-right-radius: 80%">Border</div>
       </div>
     </div>
   </body>
