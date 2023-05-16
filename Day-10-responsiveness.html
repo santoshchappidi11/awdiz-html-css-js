@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-10-responsiveness-css</title>
+
+    <style>
+      #parent-box {
+        height: 600px;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
+      }
+
+      #parent-box > div {
+        height: 100%;
+        width: 30%;
+        border: 2px solid green;
+      }
+
+      #parent-box > div:nth-child(1),
+      div:nth-child(2),
+      div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      #parent-box > div:nth-child(1) > div,
+      div:nth-child(2) > div,
+      div:nth-child(3) > div {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        border: 1px solid blue;
+        height: 30%;
+      }
+
+      @media screen and (max-width: 400px) {
+        #parent-box {
+          flex-direction: column;
+        }
+
+        #parent-box > div {
+          height: 100%;
+          width: 30%;
+          border: 2px solid rgb(205, 0, 143);
+        }
+        #parent-box > div:nth-child(1) > div {
+          border: 2px solid salmon;
+        }
+
+        #parent-box > div:nth-child(2) > div {
+          border: 2px solid blueviolet;
+        }
+
+        #parent-box > div:nth-child(3) > div {
+          border: 2px solid green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent-box">
+      <div>
+        <div>child 1</div>
+        <div>child 2</div>
+        <div>child 3</div>
+      </div>
+      <div>
+        <div>child 1</div>
+        <div>child 2</div>
+        <div>child 3</div>
+      </div>
+      <div>
+        <div>child 1</div>
+        <div>child 2</div>
+        <div>child 3</div>
+      </div>
+    </div>
+  </body>
+</html>
