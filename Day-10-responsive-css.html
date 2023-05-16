@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-10-responsive-css</title>
+
+    <style>
+      #parent-box {
+        height: 430px;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(240, 240, 240);
+        border: 1px solid rgb(174, 174, 174);
+      }
+
+      #parent-box > div {
+        height: 80%;
+        width: 30%;
+      }
+
+      #parent-box > div:nth-child(1),
+      div:nth-child(2),
+      div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      #parent-box > div:nth-child(1) > div {
+        border: 2px solid rgb(30, 30, 255);
+      }
+
+      #parent-box > div:nth-child(2) > div {
+        border: 2px solid rgb(250, 57, 36);
+      }
+
+      #parent-box > div:nth-child(3) > div {
+        border: 2px solid rgb(249, 9, 221);
+      }
+
+      #parent-box > div:nth-child(1) > div,
+      div:nth-child(2) > div,
+      div:nth-child(3) > div {
+        height: 35%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(63, 63, 63);
+      }
+
+      @media screen and (max-width: 400px) {
+        #parent-box {
+          flex-direction: column;
+        }
+
+        #parent-box > div {
+          width: 85%;
+        }
+
+        #parent-box > div:nth-child(1),
+        #parent-box > div:nth-child(2),
+        #parent-box > div:nth-child(3) {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        #parent-box > div:nth-child(1) > div {
+          width: 40%;
+          height: 75%;
+          color: white;
+          background-color: rgb(144, 144, 255);
+          border: 1px solid blue;
+        }
+
+        #parent-box > div:nth-child(2) > div {
+          width: 40%;
+          height: 75%;
+          color: white;
+          background-color: rgb(255, 132, 119);
+          border: 1px solid rgb(255, 25, 0);
+        }
+
+        #parent-box > div:nth-child(3) > div {
+          width: 40%;
+          height: 75%;
+          color: white;
+          background-color: rgb(255, 113, 255);
+          border: 1px solid purple;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent-box">
+      <div>
+        <div>A-child 1</div>
+        <div>A-child 2</div>
+        <div>A-child 3</div>
+      </div>
+      <div>
+        <div>B-child 1</div>
+        <div>B-child 2</div>
+        <div>B-child 3</div>
+      </div>
+      <div>
+        <div>C-child 1</div>
+        <div>C-child 2</div>
+        <div>C-child 3</div>
+      </div>
+    </div>
+  </body>
+</html>
