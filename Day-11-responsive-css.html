@@ -5,6 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day11-responsive-css</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .center-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #github-navbar {
+        height: 650px;
+        width: 100%;
+      }
+
+      #navbar {
+        height: 10%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+        color: white;
+        background-color: #161b22;
+      }
+
+      #navbar > #left {
+        height: 95%;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #left > #logo {
+        height: 100%;
+        width: 7%;
+      }
+
+      #left > #search-bar {
+        height: 85%;
+        width: 40%;
+      }
+
+      #search-bar > #icon-search {
+        height: 70%;
+        width: 100%;
+        border-radius: 5px 5px;
+        border: 1px solid rgb(132, 132, 132);
+      }
+
+      #icon-search > i {
+        width: 10%;
+        height: 80%;
+        font-size: 20px;
+        color: rgb(132, 132, 132);
+      }
+
+      #icon-search > #search {
+        width: 90%;
+        height: 80%;
+        outline: none;
+        border: none;
+        background-color: #161b22;
+      }
+
+      #icon-search > #search::placeholder {
+        color: rgb(221, 221, 221);
+      }
+
+      #left > #nav-links {
+        height: 100%;
+        width: 50%;
+        font-size: 13px;
+        font-weight: 600;
+        justify-content: space-around;
+      }
+
+      #navbar > #right {
+        height: 95%;
+        width: 10%;
+      }
+
+      #right > #profile {
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        color: rgb(226, 226, 226);
+      }
+
+      #body {
+        height: 90%;
+        width: 95%;
+        margin: auto;
+      }
+
+      /*--------------------- RESPONSIVE ---------------------------*/
+
+      @media screen and (max-width: 1200px) {
+        #navbar > #left {
+          width: 75%;
+        }
+      }
+      @media screen and (max-width: 1050px) {
+        #navbar > #left {
+          width: 85%;
+        }
+      }
+      @media screen and (max-width: 920px) {
+        #navbar > #left {
+          width: 90%;
+        }
+
+        #left > #search-bar {
+          width: 30%;
+        }
+
+        #left > #nav-links {
+          width: 60%;
+          padding-right: 10px;
+        }
+
+        #icon-search > #search {
+          width: 80%;
+          padding-left: 10px;
+        }
+      }
+
+      @media screen and (max-width: 750px) {
+        #navbar > #left,
+        #right {
+          display: none;
+        }
+
+        .mobile-hamburger,
+        .mobile-logo,
+        .mobile-bell {
+          display: block;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="github-navbar">
+      <div id="navbar">
+        <div id="left">
+          <div id="logo" class="center-items">
+            <i class="fa-brands fa-github fa-2x" style="font-size: 40px"></i>
+          </div>
+          <div id="search-bar" class="center-items">
+            <div id="icon-search" class="center-items">
+              <i class="fa-solid fa-magnifying-glass center-items"></i>
+              <input id="search" placeholder="Search or jump to..." />
+            </div>
+          </div>
+          <div id="nav-links" class="center-items">
+            <span>Pull requests</span>
+            <span>Issues</span>
+            <span>Codespaces</span>
+            <span>Marketplace</span>
+            <span>Explore</span>
+          </div>
+        </div>
+        <div id="right" class="center-items">
+          <div id="profile" class="center-items">
+            <i class="fa-regular fa-bell" style="font-size: 22px"></i>
+            <i class="fa-solid fa-plus" style="font-size: 22px"></i>
+            <i class="fa-regular fa-circle-user" style="font-size: 22px"></i>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="hide mobile-hamburger">
+          <i class="fa-solid fa-bars" style="font-size: 25px"></i>
+        </div>
+        <div class="hide mobile-logo">
+          <div id="logo" class="center-items">
+            <i class="fa-brands fa-github fa-2x" style="font-size: 40px"></i>
+          </div>
+        </div>
+        <div class="hide mobile-bell">
+          <i class="fa-regular fa-bell" style="font-size: 22px"></i>
+        </div>
+      </div>
+      <!-- mobile -->
+      <div id="body"></div>
+    </div>
+  </body>
 </html>
