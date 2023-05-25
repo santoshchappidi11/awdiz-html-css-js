@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-12-css</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI,
+          Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color: rgb(46, 46, 46);
+        box-sizing: border-box;
+      }
+
+      #screen {
+        height: auto;
+        width: 100%;
+      }
+
+      #navbar {
+        height: 30%;
+        width: 95%;
+        margin: auto;
+      }
+
+      #body {
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid rgb(229, 229, 229);
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+      }
+
+      #body > #left {
+        height: 100%;
+        width: 18%;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+      }
+
+      #body > #left > div {
+        padding: 22px 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(229, 229, 229);
+        border-right: 1px solid rgb(229, 229, 229);
+      }
+
+      #body > #left > #categories > h2 {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+
+      #body > #left > #brand > h2 {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+
+      #body > #left > #color > h2 {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+
+      #body > #left > #categories > input,
+      label {
+        margin-bottom: 8px;
+      }
+
+      #body > #left > #categories > input {
+        height: 15px;
+        width: 15px;
+      }
+
+      #body > #left > #categories > label {
+        color: rgb(78, 78, 78);
+        padding-left: 8px;
+      }
+
+      #body > #left > #brand > input,
+      label {
+        margin-bottom: 8px;
+      }
+
+      #body > #left > #brand > input {
+        height: 15px;
+        width: 15px;
+      }
+
+      #body > #left > #brand > label {
+        padding-left: 8px;
+        color: rgb(78, 78, 78);
+      }
+
+      #body > #left > #color > input,
+      label {
+        margin-bottom: 8px;
+      }
+
+      #body > #left > #color > input {
+        height: 15px;
+        width: 15px;
+      }
+
+      #body > #left > #color > label {
+        padding-left: 8px;
+        color: rgb(78, 78, 78);
+      }
+
+      #body > #right {
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #body > #right > .product {
+        margin: 20px 30px 10px 28px;
+      }
+
+      #body > #right > .product:hover {
+        border: 1px solid rgb(177, 177, 177);
+      }
+
+      #body > #right > .product > h2,
+      p,
+      h3 {
+        padding: 3px;
+        font-size: 15px;
+      }
+
+      #body > #right > .product > p {
+        font-size: 13px;
+        color: rgb(116, 116, 116);
+      }
+
+      #body > #right > .product > h3 {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="navbar">Navbar</div>
+      <div id="body">
+        <div id="left">
+          <div id="categories">
+            <h2>CATEGORIES</h2>
+            <input type="checkbox" />
+            <label>Tshirts</label><br />
+            <input type="checkbox" />
+            <label>Lounge Tshirts</label>
+          </div>
+          <div id="brand">
+            <h2>BRAND</h2>
+            <input type="checkbox" />
+            <label>Roadster</label><br />
+            <input type="checkbox" />
+            <label>Friskers</label><br />
+            <input type="checkbox" />
+            <label>U.S. Polo Assn.</label><br />
+            <input type="checkbox" />
+            <label>Tommy Hilfiger</label><br />
+            <input type="checkbox" />
+            <label>Jack & Jones</label><br />
+            <input type="checkbox" />
+            <label>HRX by Hritik Roshan </label><br />
+            <input type="checkbox" />
+            <label>Puma</label><br />
+            <input type="checkbox" />
+            <label>Being Human</label>
+          </div>
+          <div id="color">
+            <h2>COLOR</h2>
+            <input type="checkbox" />
+            <label>Black</label><br />
+            <input type="checkbox" />
+            <label>Blue</label><br />
+            <input type="checkbox" />
+            <label>White</label><br />
+            <input type="checkbox" />
+            <label>Navy Blue</label><br />
+            <input type="checkbox" />
+            <label>Green</label><br />
+            <input type="checkbox" />
+            <label>Grey</label><br />
+            <input type="checkbox" />
+            <label>Red</label>
+          </div>
+        </div>
+        <div id="right">
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+          <div class="product">
+            <img
+              src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+            />
+            <h2>Puma</h2>
+            <p>T-shirt</p>
+            <h3>Rs. 3299</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
