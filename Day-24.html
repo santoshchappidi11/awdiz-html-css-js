@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="Day-24.js"></script>
+  </head>
+  <body>
+    <h2>Register</h2>
+    <form onsubmit="register(event)">
+      <label>Name</label>
+      <input type="text" id="name" /><br /><br />
+      <label>Number</label>
+      <input type="number" id="number" /><br /><br />
+      <label>Email</label>
+      <input type="email" id="email" /><br /><br />
+      <label>Password</label>
+      <input type="password" id="password" /><br /><br />
+      <input type="submit" value="Register" /><br />
+    </form>
+    <br />
+    <br />
+    <button
+      style="
+        border: none;
+        background: none;
+        border-radius: 4px;
+        padding: 8px 10px;
+        background-color: rgb(255, 115, 100);
+        color: white;
+      "
+      onclick="getDataFromLocalStorage()"
+    >
+      Get Data From Local Storage
+    </button>
+  </body>
+</html>
