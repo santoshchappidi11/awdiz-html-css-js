@@ -88,7 +88,6 @@ function twoStage(start, end) {
 }
 twoStage(start, end);
 
-// var someNumers = [100, 101, 102, 103, 104, 105];
 
 function skipNumber(array) {
   var skippedNumber = [];
